@@ -1,0 +1,101 @@
+{
+    "name": "Faz-Music",
+    "description": "Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/FastmoreCrak/Faz-Music",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "fill with your telegram id as the owner of the bot",
+            "required": true,
+            "value": ""
+        },
+        "ASSID": {
+            "description": "fill with telegram id of account",
+            "required": true,
+            "value": ""
+        },
+        "ASSNAME": {
+            "description": "fill with telegram name of account",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": "fill with telegram username of account without @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "fill with telegram id of bot",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "Pon el nombre de usuario de Telegram del bot sin @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_NAME": {
+            "description": "Llena aqui con el nombre del bot de Telegram",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_API_KEY": {
+            "description": "Tu clave API de Heroku, consíguela de 'https://dashboard.heroku.com/account'",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Agregue el nombre de la aplicación Heroku aquí. Ayuda con el reinicio del bot.",
+            "required": true,
+            "value": ""
+        },
+        "BG_IMG": {
+            "description": "Enlace directo para fondo",
+            "required": true,
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Tu codigo Api ID de  my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "TU Api Hash de my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "Complete con la identificación de usuario que puede acceder a tFazs las funciones en su bot (separado con espacio).",
+            "required": true,
+            "value": ""
+        },
+        "DURATION_LIMIT": {
+            "description": "Llena , no cambies esto!",
+            "required": true,
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Llenar con su token de bot de @BotFather en telegram",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "Complete con la url de mongodb obtenida de mongodb.cloud.com (¡no use la mía a continuación!)",
+            "required": true,
+            "value": ""
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
